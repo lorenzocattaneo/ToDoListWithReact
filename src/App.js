@@ -27,6 +27,7 @@ function App() {
     });
 
     function clearList(){
+      console.log("funzione clearList");
       localStorage.removeItem('userList')
       setTextArray([])
   }
