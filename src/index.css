@@ -22,9 +22,10 @@ code {
   align-items: center;
   justify-content: center;
   width: 25%;
-  margin: 100px auto;
+  margin: 40px auto;
   border-radius: 20px;
   box-shadow: 3px 3px 5px 6px #ccc;
+  padding-bottom: 20px;
 }
 
 .form-header{
@@ -41,7 +42,11 @@ code {
   margin: 20px 0 10px 0;
 }
 
-.text-input>input{
+.text-center {
+  text-align: center;
+}
+
+input{
   border: 2px solid rgba(0, 0, 255, 0.5);
   font-size: 1.5rem;
   cursor: pointer;
@@ -67,7 +72,6 @@ button{
   transition: all 150ms ease-in-out;
   border-radius: 2px;
   outline: none;
-  margin-bottom: 20px;
 }
 
 button:hover{
@@ -118,25 +122,45 @@ button:hover{
   align-items: center;
   justify-content: space-evenly;
   list-style: none;
+  width: 100%;
+  margin: 0 10px;
 }
 
 .items-list>li{
-  margin: 25px;
-  padding: 25px;
+  margin: 15px 15px 0 15px;
+  padding: 15px;
   font-size: 1.3rem;
-  color: rgba(255, 255, 255, 0.623);
+  color: rgba(255, 255, 255, 0.934);
   background-color:rgba(5, 37, 65, 0.884);
   transition: all 200ms ease-in-out;
   cursor: pointer;
   min-width: 100px;
   text-align: center;
+  width: 80%;
 }
 
 .items-list>li:hover{
-  transform: translateY(-20px);
+  transform: translateY(-5px);
   opacity: 0.8;
 }
 
-.terminato{
+.items-list>li.terminato{
   text-decoration: line-through;
+  background-color: #666;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  width: 100%;
+}
+
+.list-controls-container {
+  display: flex;
+  gap:10px;
+  justify-content: center;
+  height: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
