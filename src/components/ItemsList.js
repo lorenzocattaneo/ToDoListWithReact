@@ -33,7 +33,7 @@ function ItemsList(props) {
                         .map((item, index) => {
                             return <li
                                 onClick={() => props.updateItem(index, item.completed === false)}
-                                className={item.completed === true && "terminato"}
+                                className={item.completed === true && "item-done"}
                                 key={index}>
                                 {item.testo}
                             </li>

@@ -144,7 +144,7 @@ button:hover{
   opacity: 0.8;
 }
 
-.items-list>li.terminato{
+.items-list>li.item-done{
   text-decoration: line-through;
   background-color: #666;
 }
